@@ -6,12 +6,12 @@ files:
 
 hooks:
   BeforeInstall:
-    - location: scripts/install_docker.sh
+    - location: scripts/before_install.sh
       timeout: 300
       runas: root
 
   AfterInstall:
-    - location: scripts/pull_docker_images.sh
+    - location: scripts/after_install.sh
       timeout: 300
       runas: root
 
