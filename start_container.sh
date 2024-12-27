@@ -2,11 +2,11 @@
 # Start Docker containers
 set -e
 
-IMAGE1="tex-odoo-dev-server-image:latest"
-IMAGE2="tex-odoo-uat-server-image:latest"
+IMAGE1="tex-odoo-dev-image:latest"
+IMAGE2="tex-odoo-uat-image:latest"
 
-CONTAINER1_NAME="container1"
-CONTAINER2_NAME="container2"
+tex-odoo-dev-container="container1"
+tex-odoo-uat-container="container2"
 
 echo "Starting Docker containers..."
 docker run -d --name $tex-odoo-dev-server -p 8080:80 $IMAGE1
